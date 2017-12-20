@@ -2,6 +2,7 @@ package model
 
 type Compose struct {
 	Version       string                   `json:"version",yaml:"version"`
+	Application   string                   `json:"application,omitempty",yaml:"application,omitempty"`
 	Microservices map[string]*Microservice `json:"microservices",yaml:"microservices"`
 }
 
